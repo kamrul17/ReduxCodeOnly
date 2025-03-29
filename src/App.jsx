@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Subcomponent from "./component/Subcomponent";
+import ProductList from "./component/ProductList";
+import CartComponent from "./component/CartComponent";
 import { useDispatch, useSelector } from "react-redux";
 import {
   decrement,
@@ -52,6 +54,12 @@ function App() {
       </div>
       <br />
       <Subcomponent count={count} />
+      <br />
+      <br />
+      <hr />
+      <CartComponent />
+      <hr />
+      <ProductList />
     </>
   );
 }
